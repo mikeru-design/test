@@ -1,0 +1,226 @@
+// ---------------------------------------VARIABLES---------------------------------
+
+$mian-color: (#00ac8f);
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pseudo ($width, $height, $top, $right, $bottom, $left, $bg){
+    content: '';
+    position: absolute;
+    width: $width;
+    height: $height;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    background-color: $bg;
+}
+
+// ---------------------------------------GLOBAL---------------------------------
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    position: relative;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+// ---------------------------------------NAVIGATION-----------------------------
+
+.navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    @include flex-center();
+    justify-content: space-between;
+
+    height: 100px;
+    width: 100vw;
+
+    &::before{
+        @include pseudo(100%, 100%, -100%, 0, auto, auto, $mian-color);
+        transition: top .5s;
+        z-index: 80;
+    }
+
+    &:hover::before{
+        top: 0;
+    }
+
+    .nav-logo{
+        @include flex-center();
+        width: auto;
+        height: 100%;
+        margin-left: 10vw;
+        z-index: 90;
+        
+        
+        a{
+            position: relative;
+            height: auto;
+            padding: 5px;
+            transition: transform 1s;
+            
+            .logo{
+                height: 20px;
+                // filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
+                
+            }
+
+            &:hover{
+                transform: scale(1.2)
+            }
+
+        }
+
+
+    }
+
+    .nav-list{
+        @include flex-center();
+        justify-content: space-around;
+        width: 30vw;
+        min-width: 450px;
+        margin-right: 5vw;
+        z-index: 90;
+        
+        .nav-item{
+            position: relative;
+            width: 100%;
+            padding: 5px;
+            
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 2px;
+            
+            p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                
+                transition: .2s;
+
+                &:hover{
+                    transform: translate(-50%, -50%) scale(1.2);
+                    transform-origin: center;
+                    letter-spacing: 4px;
+                }
+            }
+
+        }
+    }
+
+}
+
+// ---------------------------------------HEADER---------------------------------
+
+header{
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+
+    .img-wrapper{
+        width: 100%;
+        height: 100%;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .content-wrapper{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+        width: 100%;
+
+        text-align: center;
+        color: white;
+
+        h1{
+            font-size: 60px;
+            font-weight: 100;
+
+            margin-bottom: 2rem;
+            
+            span{
+                font-weight: 700;
+            }
+        }
+        
+        h3{
+            margin-bottom: 4rem;
+
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .main-btn{
+            position: relative;
+            width: 8vw;
+            height: 4vh;
+
+            color: white;
+            background: none;
+
+            border: 2px solid white;
+            border-radius: 50px;
+
+            transition: .5s;
+            
+            cursor: pointer;
+            
+            a{
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                
+                color: white;
+                font-weight: 900;
+
+                transform: translate(-50%, -50%);
+                transform-origin: center;
+                transition: .3s;
+            }
+
+            &:hover{
+                background-color: white;
+            }
+            
+            &:hover a{
+                color: $mian-color;
+            }
+        }
+    }
+}
+
+// ---------------------------------------HEADER---------------------------------
+
+.about{
+    height: 100vh;
+}
