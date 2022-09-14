@@ -189,7 +189,8 @@ header{
 
             border: 2px solid white;
             border-radius: 50px;
-
+            
+            overflow: hidden;
             transition: .5s;
             
             cursor: pointer;
@@ -202,14 +203,21 @@ header{
                 
                 color: white;
                 font-weight: 900;
-
+                
                 transform: translate(-50%, -50%);
                 transform-origin: center;
                 transition: .3s;
             }
-
-            &:hover{
-                background-color: white;
+            
+            &::before{
+                @include pseudo(100%, 100%, 0, 0, auto, auto, white);
+                transform: translateY(100%);
+                transition: .3s;
+            }
+            
+            &:hover::before{
+                transform: translateY(0%);
+                
             }
             
             &:hover a{
