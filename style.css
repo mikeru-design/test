@@ -36,7 +36,7 @@ body::-webkit-scrollbar {
   right: 0;
   bottom: auto;
   left: auto;
-  background-color: #039191;
+  background-color: #00ac8f;
   transition: top 0.5s;
   z-index: 80;
 }
@@ -174,7 +174,7 @@ header .content-wrapper .main-btn:hover::before {
   transform: translateY(0%);
 }
 header .content-wrapper .main-btn:hover a {
-  color: #039191;
+  color: #00ac8f;
 }
 
 .about {
