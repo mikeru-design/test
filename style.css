@@ -36,7 +36,7 @@ body::-webkit-scrollbar {
   right: 0;
   bottom: auto;
   left: auto;
-  background-color: #00ac8f;
+  background-color: #039191;
   transition: top 0.5s;
   z-index: 80;
 }
@@ -160,7 +160,7 @@ header .content-wrapper .main-btn:hover {
   background-color: white;
 }
 header .content-wrapper .main-btn:hover a {
-  color: #00ac8f;
+  color: #039191;
 }
 
 .about {
