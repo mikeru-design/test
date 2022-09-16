@@ -25,7 +25,7 @@ body p {
   flex-wrap: wrap;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 100px 0 120px;
+  padding: 100px 6vw 120px;
 }
 
 .section-title {
@@ -251,6 +251,10 @@ body p {
 }
 
 .about .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 24%;
 }
 .about .content-wrapper .icon {
@@ -275,6 +279,7 @@ body p {
   fill: white;
 }
 .about .content-wrapper .text-wrapper {
+  width: 80%;
   text-align: center;
 }
 .about .content-wrapper .text-wrapper h5 {
@@ -292,7 +297,7 @@ body p {
 }
 
 .content-wrapper-secondary {
-  width: 30%;
+  width: 40%;
 }
 .content-wrapper-secondary .text-wrapper .title {
   margin-bottom: 80px;
@@ -317,7 +322,7 @@ body p {
 
 .dark-img {
   height: 700px;
-  background-image: url(../Modul-2-zadanie-dodatkowe/img/BG-Photo.png);
+  background-image: url(img/BG-Photo.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -365,7 +370,8 @@ body p {
   justify-content: center;
   align-items: center;
   justify-content: end;
-  width: 40%;
+  width: 45%;
+  min-width: 530px;
   margin-bottom: 100px;
 }
 .services .content-wrapper .icon {
@@ -426,6 +432,8 @@ body p {
 .team .main-wrapper {
   width: 100%;
   max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 .team .main-wrapper .gallery-wrapper {
   display: flex;
