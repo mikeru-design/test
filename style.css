@@ -297,7 +297,7 @@ body p {
 }
 
 .content-wrapper-secondary {
-  width: 40%;
+  width: 50%;
 }
 .content-wrapper-secondary .text-wrapper .title {
   margin-bottom: 80px;
@@ -318,6 +318,12 @@ body p {
 
 .section-light .main-wrapper {
   justify-content: start;
+}
+.section-light .main-wrapper .content-wrapper {
+  text-align: right;
+}
+.section-light .main-wrapper .text-wrapper {
+  text-align: right;
 }
 
 .dark-img {

@@ -356,7 +356,7 @@ body{
 // ---------------------------------------SECTION-DARK-LIGHT--------------------------
 
 .content-wrapper-secondary{
-    width: 40%;
+    width: 50%;
     
     .text-wrapper{
 
@@ -386,6 +386,14 @@ body{
     
     .main-wrapper{
         justify-content: start;
+
+        .content-wrapper{
+            text-align: right;
+        }
+
+        .text-wrapper{
+            text-align: right;
+        }
     }
 }
 
