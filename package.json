@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "hbbiubiubi\r jhbbiuiujbk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeru-design/test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikeru-design/test/issues"
+  },
+  "homepage": "https://github.com/mikeru-design/test#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "html-validate": "^7.4.1"
+  }
+}
