@@ -1,0 +1,5 @@
+$ npm install --save-dev html-validate
+$ npm install -g html-validate
+
+komenda uruchamiająca:
+$ html-validate *.html
